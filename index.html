@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Consulta materiales de construcción a empresas proveedoras y coordina posibles entregas a El Villar, Chuquisaca.">
+  <title>Materiales El Villar | Construye más cerca</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="cabecera">
+  <div class="contenedor nav">
+    <a href="#inicio" class="marca"><span class="marca-simbolo">▥</span><span>MATERIALES <b>EL VILLAR</b><small>Conectamos tu obra</small></span></a>
+    <nav aria-label="Navegación"><a href="#catalogo">Materiales</a><a href="#pasos">Cómo funciona</a><a href="#consulta" class="nav-cta">Solicitar cotización ↗</a></nav>
+  </div>
+</header>
+<main>
+  <section id="inicio" class="hero">
+    <div class="contenedor hero-contenido">
+      <span class="pildora"><span class="punto"></span> PARA EL VILLAR, CHUQUISACA</span>
+      <h1>Todo para tu obra.<br><em>Un contacto más cerca.</em></h1>
+      <p>Encuentra materiales de construcción y consulta directamente con el encargado de ventas de cada empresa. Pregunta también por el transporte hasta El Villar.</p>
+      <div class="hero-acciones"><a href="#catalogo" class="boton boton-amarillo">Ver materiales <span>→</span></a><a href="#pasos" class="boton boton-contorno">¿Cómo funciona?</a></div>
+      <div class="hero-beneficios"><span>✓ Contacto directo</span><span>✓ Sin registro</span><span>✓ Cotización por WhatsApp</span></div>
+    </div>
+    <div class="hero-decor" aria-hidden="true"></div>
+  </section>
+  <section class="resumen"><div class="contenedor resumen-grid"><div><span class="resumen-icono">▤</span><span><strong>5 proveedores asignados</strong><small>Por tipo de material</small></span></div><div><span class="resumen-icono">▣</span><span><strong>Elige lo que necesitas</strong><small>Sin buscar números</small></span></div><div><span class="resumen-icono">➤</span><span><strong>Consulta por WhatsApp</strong><small>El envío lo confirma el cliente</small></span></div></div></section>
+  <section id="catalogo" class="seccion contenedor">
+    <div class="seccion-encabezado"><div><span class="sobre">NUESTRO CATÁLOGO</span><h2>¿Qué material necesitas?</h2><p>Selecciona una tarjeta. La empresa y su número aparecerán automáticamente en la solicitud.</p></div><div class="etiqueta-catalogo">6 categorías</div></div>
+    <div class="buscador-caja"><label for="buscador" class="oculto">Buscar materiales</label><span>⌕</span><input id="buscador" type="search" placeholder="Buscar ladrillos, cemento, fierros..." autocomplete="off"></div>
+    <div class="catalogo" id="tarjetas">
+      <button type="button" class="producto" data-material="Ladrillos"><span class="producto-arte arte-ladrillos"><span>🧱</span></span><span class="producto-cuerpo"><span class="producto-tipo">MUROS Y ESTRUCTURAS</span><strong>Ladrillos</strong><small>Proveedor: INCERPAZ</small><span class="producto-link">Consultar disponibilidad <b>↗</b></span></span></button>
+      <button type="button" class="producto" data-material="Cemento"><span class="producto-arte arte-cemento"><span>🏗️</span></span><span class="producto-cuerpo"><span class="producto-tipo">OBRA GRUESA</span><strong>Cemento</strong><small>Proveedor: FANCESA</small><span class="producto-link">Consultar disponibilidad <b>↗</b></span></span></button>
+      <button type="button" class="producto" data-material="Fierros"><span class="producto-arte arte-fierros"><span>🔩</span></span><span class="producto-cuerpo"><span class="producto-tipo">ACERO Y REFUERZO</span><strong>Fierros</strong><small>Proveedor: Las Lomas</small><span class="producto-link">Consultar disponibilidad <b>↗</b></span></span></button>
+      <button type="button" class="producto" data-material="Cerámicas"><span class="producto-arte arte-ceramicas"><span>▦</span></span><span class="producto-cuerpo"><span class="producto-tipo">PISOS Y REVESTIMIENTOS</span><strong>Cerámicas</strong><small>Proveedor: Cerámica COBOCE</small><span class="producto-link">Consultar disponibilidad <b>↗</b></span></span></button>
+      <button type="button" class="producto" data-material="Tuberías"><span class="producto-arte arte-tuberias"><span>🛠️</span></span><span class="producto-cuerpo"><span class="producto-tipo">INSTALACIONES</span><strong>Tuberías</strong><small>Proveedor: Providencia</small><span class="producto-link">Consultar disponibilidad <b>↗</b></span></span></button>
+      <button type="button" class="producto" data-material="Calaminas"><span class="producto-arte arte-calamina"><span>🏠</span></span><span class="producto-cuerpo"><span class="producto-tipo">CUBIERTAS Y TECHOS</span><strong>Calaminas</strong><small>Proveedor por confirmar</small><span class="producto-link">Ver información <b>↗</b></span></span></button>
+    </div>
+    <p id="sinResultados" class="sin-resultados" hidden>No encontramos ese material en el catálogo.</p>
+    <p class="nota-catalogo">Los materiales son categorías de consulta, no inventario en tiempo real. Los proveedores confirman medidas, precios, disponibilidad y envíos.</p>
+  </section>
+  <section class="cinta"><div class="contenedor cinta-grid"><div><span>01 / ELIGE</span><strong>Busca tu material</strong></div><div><span>02 / CONSULTA</span><strong>Contacto asignado al instante</strong></div><div><span>03 / COORDINA</span><strong>Precio, stock y transporte</strong></div></div></section>
+  <section class="seccion cotizacion-fondo" id="consulta"><div class="contenedor">
+    <div class="seccion-encabezado"><div><span class="sobre">CONTACTO CON PROVEEDORES</span><h2>Solicita tu cotización</h2><p>Completa los datos y prepara la consulta directamente para la empresa seleccionada.</p></div></div>
+    <div class="cotizacion-grid"><form id="formulario" class="formulario">
+      <div class="subtitulo-form"><span class="paso-num">1</span><h3>Material y empresa</h3></div>
+      <div class="dos-campos"><div class="campo"><label for="material">Material de construcción *</label><select id="material" required><option value="">Selecciona un material</option><option>Ladrillos</option><option>Cemento</option><option>Fierros</option><option>Cerámicas</option><option>Tuberías</option><option>Calaminas</option></select></div><div class="campo"><label for="cantidad">Cantidad aproximada *</label><input type="number" id="cantidad" min="1" step="1" value="1" required></div></div>
+      <div class="campo"><label for="detalle">Medida o tipo de material (opcional)</label><input id="detalle" maxlength="120" placeholder="Ej.: ladrillo de 6 huecos, tubo PVC de 4 pulgadas"></div>
+      <div id="proveedor" class="proveedor proveedor-vacio" aria-live="polite"><span class="proveedor-icono">⌁</span><div><small>EMPRESA ASIGNADA</small><strong id="nombreEmpresa">Selecciona un material</strong><span id="numeroEmpresa">Aquí aparecerá su WhatsApp</span></div><span class="proveedor-check">✓</span></div>
+      <div class="subtitulo-form"><span class="paso-num">2</span><h3>Tus datos y entrega</h3></div>
+      <div class="dos-campos"><div class="campo"><label for="nombre">Nombre y apellido *</label><input id="nombre" required maxlength="80" placeholder="Nombre completo" autocomplete="name"></div><div class="campo"><label for="telefono">Celular de contacto *</label><input id="telefono" required type="tel" inputmode="tel" maxlength="16" placeholder="Ej.: 71234567"></div></div>
+      <div class="campo"><label for="entrega">Lugar de entrega</label><input id="entrega" value="El Villar, Chuquisaca" maxlength="120"></div>
+      <div class="campo"><label for="observaciones">Observaciones (opcional)</label><textarea id="observaciones" rows="3" maxlength="450" placeholder="Ej.: Necesito conocer el costo del transporte y fecha de entrega."></textarea></div>
+      <button id="enviar" type="submit" class="boton boton-verde boton-envio">Enviar consulta por WhatsApp <span>↗</span></button>
+      <p id="mensajeEstado" class="mensaje-estado" role="status" aria-live="polite"></p>
+      <p class="nota-form">WhatsApp abrirá un mensaje preparado. Debes presionar <strong>Enviar</strong> en WhatsApp para comunicártelo con la empresa. No se realiza ninguna compra ni pago desde esta página.</p>
+    </form>
+    <aside class="lateral"><div class="lateral-principal"><span class="lateral-icono">🚛</span><span class="sobre">PENSADO PARA EL VILLAR</span><h3>Construir también es encontrar cómo traer los materiales.</h3><p>Por eso tu mensaje pregunta al proveedor si puede transportar el pedido hasta El Villar, cuánto costaría y en qué plazo.</p><div class="separador"></div><span class="mini-linea">✓ Precio por confirmar</span><span class="mini-linea">✓ Stock por confirmar</span><span class="mini-linea">✓ Transporte por coordinar</span></div><div class="lateral-aviso"><strong>Importante</strong><p>Este es un proyecto educativo. Los números fueron proporcionados para configurarlo, pero la página no verifica identidad, stock ni condiciones comerciales.</p></div></aside>
+    </div>
+  </div></section>
+  <section id="pasos" class="seccion contenedor seccion-pasos"><span class="sobre">ASÍ DE FÁCIL</span><h2>¿Cómo funciona?</h2><div class="pasos-grid"><div><span class="circulo">01</span><h3>Selecciona el material</h3><p>Busca lo que necesitas en las tarjetas del catálogo.</p></div><div><span class="circulo">02</span><h3>Consulta a la empresa</h3><p>El sistema muestra automáticamente su nombre y WhatsApp.</p></div><div><span class="circulo">03</span><h3>Coordina la entrega</h3><p>Confirma precio, cantidad y transporte hasta El Villar con ventas.</p></div></div></section>
+</main>
+<footer><div class="contenedor pie"><span class="marca-footer">▥ &nbsp; MATERIALES EL VILLAR</span><span>Prototipo educativo · Técnico Medio · Chuquisaca, Bolivia</span></div></footer>
+<script src="elvis.js"></script>
+</body>
+</html>
